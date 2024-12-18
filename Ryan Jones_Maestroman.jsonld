@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Ryan Jones_Maestroman"
+    },
+    "motivations": {
+      "@value": "As a founder and co-CEO of NEWM, we have chosen to build atop of the Cardano Blockchain. Our business/protocol is contingent upon the survival of our chosen layer one; therefore, I am incentivized to ensure the chain's success and wellbeing."
+    },
+    "objectives": {
+      "@value": "I take a slightly different approach to being a #DRep - I am not the @amw7 of the chain. I'm not a plutus wizard like @AncientKraken, nor am I a professional tokenomics guru like \n@methebim. I DO talk to all these individuals (and other trusted peers) in order to create informed decisions. Good leaders aren't the BEST at everything. They can't possibly have all the answers. However, they CAN surround themselves with the best people. Discernment on where to receive guidance is often the superpower that makes or breaks the success of leadership. I chose to build a business on #Cardano. I've been here since 2017 and seen the community come into its own. This chain's future matters to me. We employ many, many people over at NEWM. This, coupled with my ability to story tell and affectively communicate complex issues, leads me to believe I have just enough hubris to covet your voting power. "
+    },
+    "paymentAddress": {
+      "@value": "addr1q8jet57ldgdvw2uwe6j98h63989mduyr9rsu5d9raef7z70uuu5672kl4wq63tjsetrg2k2whre045a34gj47hjqvrwsq42x68"
+    },
+    "qualifications": {
+      "@value": "Founder and co-CEO of project building on the Cardano blockchain since 2020. \nActive community member and thought leader since 2017.\nProfessional Musician and entrepreneur.\n2 Masters degrees: one in conducting and another in Music Education. "
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "NEWM Website"
+        },
+        "uri": {
+          "@value": "newm.io"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "SoundCrypto Podcast"
+        },
+        "uri": {
+          "@value": "https://www.youtube.com/@SoundCryptoPodcast"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Official Twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/RyanJones_NEWM"
+        }
+      }
+    ]
+  }
+}
